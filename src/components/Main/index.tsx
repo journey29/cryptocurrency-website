@@ -1,20 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlay } from "@fortawesome/free-solid-svg-icons"
-import {animated, useSpring} from '@react-spring/web'
+import { animated, useSpring } from '@react-spring/web'
 import { MainList } from "./MainList"
+import { useInView } from 'react-intersection-observer';
 import { Number } from "components/Number"
 
-export const Main:React.FC = () => {
-    const spingProps = useSpring({
-        from:{opacity:0},
-        to:{opacity:1},
-        config:{
-            duration: 2000
-        }
-    })
+export const Main: React.FC = () => {
+    const [inViewRef, inView] = useInView({
+        threshold: 0.1,
+    });
+
+    const springProps = useSpring({
+        from: { opacity: 0 },
+        to: { opacity: inView ? 1 : 0 },
+        config: {
+            duration: 1000,
+        },
+    });
 
     return (
-        <animated.section className="my-16" style={spingProps}>
+        <animated.section ref={inViewRef} className="my-16" style={springProps}>
             <div className="container">
                 <div className="flex flex-col items-center gap-7 text-center">
                     <div className="flex flex-col items-center gap-7 max-w-xl">
@@ -28,15 +33,15 @@ export const Main:React.FC = () => {
                     </div>
                     <div className="flex flex-col gap-7 text-center mb-7 ml:flex-row">
                         <div className="ml-32 ml:ml-0">
-                            <span className="mr-2 text-lg font-semibold"><Number n={750}/>K+</span>
+                            <span className="mr-2 text-lg font-semibold"><Number n={750} />K+</span>
                             <span className="text-gray">User Active</span>
                         </div>
                         <div>
-                            <span className="mr-2 text-lg font-semibold"><Number n={750}/>K+</span>
+                            <span className="mr-2 text-lg font-semibold"><Number n={750} />K+</span>
                             <span className="text-gray">User Active</span>
                         </div>
                     </div>
-                 <MainList/>
+                    <MainList />
                 </div>
             </div>
         </animated.section>

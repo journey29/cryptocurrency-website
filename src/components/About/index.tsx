@@ -10,10 +10,12 @@ export const About: React.FC = () => {
         <section className="mb-16">
             <div className="container">
                 <div className="flex flex-col items-center text-center">
-                    <Description textCenter={true} title="Accelerate the world’s transition" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." caption="ABOUT US" />
-                    <Button>
-                        More About Us
-                    </Button>
+                    <div className="w-full flex flex-col items-center text-center md:flex-row md:text-start md:justify-between md:my-7">
+                        <Description title="Accelerate the world’s transition" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." caption="ABOUT US" />
+                        <Button>
+                            More About Us
+                        </Button>
+                    </div>
                     <div className="relative bg-[url(./assets/images/about/photo-01.jpg)] bg-cover bg-center bg-no-repeat h-96 w-full">
                         <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-center gap-4 bg-light-black">
                             <h4 className="font-semibold text-2xl md:text-4xl">Fortune favours the brave</h4>

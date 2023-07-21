@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
           <ul className="grid grid-cols-1 items-center text-center gap-7 sl:grid-cols-2 sl:items-start ml:grid-cols-4">
             <li className="flex flex-col items-center gap-5">
               <img className="w-40" src={Logo} alt="logo" />
-              <p className="text-gray text-sm">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+              <p className="text-gray">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
               <div>
                 <ul className="flex items-center gap-6">
                   <li>
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
             </li>
             <li>
               <h6 className="text-xl mb-3">Our Products</h6>
-              <ul className="text-gray text-sm flex flex-col gap-3">
+              <ul className="text-gray flex flex-col gap-3">
                 <li>
                   <a href="#">Crypto Earn</a>
                 </li>
@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
             </li>
             <li>
               <h6 className="text-xl mb-3">Pages</h6>
-              <ul className="text-gray text-sm flex flex-col gap-3">
+              <ul className="text-gray flex flex-col gap-3">
                 <li>
                   <Link to="/about">About Us</Link>
                 </li>
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
             </li>
             <li>
               <h6 className="text-xl mb-3">Contact</h6>
-              <ul className="flex flex-col items-center gap-4 text-gray text-sm">
+              <ul className="flex flex-col items-center gap-4 text-gray">
                 <li className="flex flex-col justify-center gap-3 ml:flex-row">
                   <FontAwesomeIcon className="text-global-color-green hover:text-gray duration-300 ease-in" icon={faPhone} />
                   <a href="tel:+2055550100">(205) 555-0100</a>
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col items-center gap-3 text-center text-gray text-sm">
+        <div className="flex flex-col items-center gap-3 text-center text-gray">
           <p>Copyright © 2022 Coinary</p>
           <div className="flex items-center gap-5">
             <p>Help & Support</p> |
