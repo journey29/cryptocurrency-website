@@ -56,16 +56,16 @@ export const Footer: React.FC = () => {
               <h6 className="text-xl mb-3">Pages</h6>
               <ul className="text-gray flex flex-col gap-3">
                 <li>
-                  <Link to="/about">About Us</Link>
+                  <Link className='hover:text-global-color-green duration-300 ease-in' to="/about">About Us</Link>
                 </li>
                 <li>
-                  <Link to="our-app">Our App</Link>
+                  <Link className='hover:text-global-color-green duration-300 ease-in' to="/our-app">Our App</Link>
                 </li>
                 <li>
-                  <Link to="/careers">Careers</Link>
+                  <Link className='hover:text-global-color-green duration-300 ease-in' to="/careers">Careers</Link>
                 </li>
                 <li>
-                  <Link to="/token-sale">Token Sale</Link>
+                  <Link className='hover:text-global-color-green duration-300 ease-in' to="/token-sale">Token Sale</Link>
                 </li>
               </ul>
             </li>
