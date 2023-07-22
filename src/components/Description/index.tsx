@@ -10,7 +10,7 @@ type Props = {
 
 export const Description: React.FC<Props> = ({ title, text, caption }) => {
   const [inViewRef, inView] = useInView({
-    threshold: 0.1,
+    threshold: 0.7,
   });
 
   const springProps = useSpring({
