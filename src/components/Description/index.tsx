@@ -19,7 +19,7 @@ export const Description: React.FC<Props> = ({ title, text, caption }) => {
     config: {
       duration: 500,
     },
-  });
+  })
 
   return (
     <animated.div ref={inViewRef} className="flex flex-col gap-4 max-w-lg w-full" style={springProps}>
