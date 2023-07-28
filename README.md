@@ -1,5 +1,5 @@
 # Cryptocurrency Website :chart_with_upwards_trend:
-## [Project Website]([https://furniture-29b1f.web.app/](https://sprightly-kangaroo-a57749.netlify.app/)) 
+## [Project Website](https://sprightly-kangaroo-a57749.netlify.app/)
 
 Welcome to our captivating cryptocurrency website, where cutting-edge design meets seamless user experiences. Explore the world of digital assets through our thoughtfully crafted pages, each adorned with breathtaking animations powered by the remarkable React Spring library. Unveil the possibilities of the blockchain revolution as you navigate through a wealth of information, engaging content, and interactive elements. Whether you're a seasoned crypto enthusiast or a curious newcomer, our platform offers a delightful journey that unveils the future of finance. Embark on this mesmerizing adventure, where innovation and aesthetics blend harmoniously to create an unparalleled experience in the world of cryptocurrencies.
 
